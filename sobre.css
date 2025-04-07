@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    
+    
+}
+
+body {
+    box-sizing: border-box;
+    width: 100%;
+    background: rgb(190, 190, 190);   
+}
+
+
+
+
+header {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    padding: 1rem;
+    height: 10vh;   
+}
+
+header > nav {
+    float: right;
+    
+      
+    
+  
+}
+   
+
+header > nav > ul {
+    margin-top: 2.5vh;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;    
+      
+}
+
+
+header > nav > ul > li {
+    padding: 10px;
+    display: inline-block;
+    margin-right: 50px;
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        outline: 2px solid white;
+        outline-offset: 0.2rem;
+        border-radius: 20px ;
+        padding: 5px;
+        
+        
+        
+    }   
+}
+
+
+
+a:hover {
+    filter: brightness(50%);
+    transition: all 0.5s; 
+}
+
+.jogar {
+    background: white ;
+    padding: 5px;
+    border-radius: 20px;
+    color: black ;
+    outline: 2px solid white;
+    outline-offset: 0.2rem;
+}
+
+.jogar:hover {
+    filter: brightness(50%);
+    transition: all 0.5s;  
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    padding: 3rem;
+    height: 3rem;
+    background:rgb(8, 8, 8);
+    ul {
+        list-style: none;
+        text-decoration: none;
+
+        text-align: center;
+        backdrop-filter: blur(10px);       
+    }
+    li {
+        display: inline-block;
+        margin: 10px 15px;       
+    }
+
+    p {
+        color: white;
+        text-align: center;
+        margin: 1px;
+    }
+}
+
+section {
+    height: 100rem; 
+    p {color: white;
+       font-size: 2rem;
+       text-align: center;
+       margin:3rem;     
+    }   
+}
+
+.pirata-one-regular {
+  font-family: "Pirata One", system-ui, sans-serif;
+  font-size: 4rem;
+  font-style: normal;
+  letter-spacing: 10px;
+}
+
+#logo {
+    font-family: "Pirata One", system-ui, sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    margin-top: 2vh;  
+}
+
+
+
+
+
