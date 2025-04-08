@@ -175,8 +175,7 @@ section {
 }
 
 .jogarbutton1 {
-    padding: 200px;
-    background-color: ;
+    padding: 550px;
     text-decoration: none;
     color: white;
     border-radius: 90px; 
@@ -185,10 +184,6 @@ section {
 .jogarbutton2 {
     border-radius: 60px;
     background-color: purple;
-}
-
-.jogarbutton2:hover {
-
 }
 
 .jogarbutton1:hover {
