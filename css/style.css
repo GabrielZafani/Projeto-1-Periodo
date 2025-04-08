@@ -10,7 +10,7 @@
 body {
     box-sizing: border-box;
     width: 100%;
-    background: rgb(190, 190, 190);   
+    background: rgb(190, 190, 190);
 }
 
 
@@ -136,6 +136,7 @@ section {
        font-size: 2rem;
        text-align: center;
        margin: 4rem;
+       overflow: hidden;
     }
     
     h2 {
@@ -145,6 +146,8 @@ section {
         font-family: "Pirata One" ;
         letter-spacing: 10px;
     }
+
+    
 
 }
 
@@ -170,6 +173,32 @@ section {
 .p-index {
     margin-top: 0px;
 }
+
+.jogarbutton1 {
+    padding: 200px;
+    background-color: ;
+    text-decoration: none;
+    color: white;
+    border-radius: 90px; 
+}
+
+.jogarbutton2 {
+    border-radius: 60px;
+    background-color: purple;
+}
+
+.jogarbutton2:hover {
+
+}
+
+.jogarbutton1:hover {
+    filter: brightness(100%);
+}
+
+
+
+
+
 
 
 
