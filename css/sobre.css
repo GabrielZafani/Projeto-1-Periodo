@@ -22,7 +22,8 @@ header {
     text-decoration: none;
     width: 100%;
     padding: 1rem;
-    height: 10vh;   
+    height: 6vh;  
+    overflow: hidden; 
 }
 
 header > nav {
@@ -35,7 +36,6 @@ header > nav {
    
 
 header > nav > ul {
-    margin-top: 2.5vh;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;    
@@ -60,9 +60,6 @@ header > nav > ul > li {
         
     }   
 }
-
-
-
 a:hover {
     filter: brightness(50%);
     transition: all 0.5s; 
@@ -76,7 +73,6 @@ a:hover {
     outline: 2px solid white;
     outline-offset: 0.2rem;
 }
-
 .jogar:hover {
     filter: brightness(50%);
     transition: all 0.5s;  
@@ -133,7 +129,6 @@ section {
     font-size: 2rem;
     text-decoration: none;
     color: white;
-    margin-top: 2vh;  
 }
 
 
