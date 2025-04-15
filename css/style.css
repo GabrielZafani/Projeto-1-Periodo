@@ -25,6 +25,7 @@ header {
     background-position: center; /* Centraliza a imagem de fundo */
     background-repeat: no-repeat; /* Evita que a imagem de fundo se repita */
     min-height: 150px; /* Garante uma altura mínima */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao cabeçalho */
 }
 
 html, body {
@@ -73,17 +74,16 @@ nav ul li a:hover {
 }
 
 .jogar {
-    background: white;
-    color: black;
-    border: 2px solid white;
-    border-radius: 20px;
-    padding: 5px 10px;
-    top: -60px;
+    background: purple;
+    color: white;
+    
+    border-radius: 10px;
+    padding: 8px 12px;
 }
 
 .jogar:hover {
-    background: rgba(255, 255, 255, 0.8);
-    color: black;
+    background: rgb(107, 0, 107);
+    color: rgb(255, 255, 255);
 }
 
 #logo {  
@@ -95,7 +95,7 @@ nav ul li a:hover {
     margin: 0; /* Remove margens extras */ 
   }
 
-/* Botão de três pontos */
+
 
 
 /* Rodapé */
@@ -134,6 +134,10 @@ section {
     flex: 1; /* Expande o conteúdo para ocupar o espaço restante */
     padding: 2rem;
     text-align: center;
+
+    h2 {
+        color: purple;
+    }
 }
 
 section h2 {
@@ -155,8 +159,11 @@ section p {
     border-radius: 10px;
     padding: 10px 15px;
     text-decoration: none;
-    
+}
 
+.jogarbutton1:hover {
+    background-color: rgb(107, 0, 107);
+    color: rgb(255, 255, 255);
 }
 
 /* Grid */
