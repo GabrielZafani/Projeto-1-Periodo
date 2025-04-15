@@ -1,199 +1,234 @@
+/* Estilos gerais */
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden;   
 }
 
 body {
-    box-sizing: border-box;
     width: 100%;
     background: rgb(190, 190, 190);
+    overflow-x: hidden;
 }
 
-
-
-
+/* Cabeçalho */
 header {
-    background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW96bWQ4YW45eW03cHl1aTBmb3hnbnB5NnYzYTRoZ2Izc2ptYWV2bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9PalpZKlDt5iNfnFXT/giphy.gif);
-    background-size: cover;
+    background-image: url(https://images.ctfassets.net/nnkxuzam4k38/39sOStld2OCyNn3HmCpqco/21d339122a7cb417c83e6ebdc347ea5c/sea-edge-79ab30e2.png);
     color: white;
-    text-decoration: none;
     width: 100%;
     padding: 1rem;
-    height: 60vh;
-    box-shadow: 0px 10px 70px black;
-    overflow: hidden;
-}
-
-header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 65.1vh;
-    background-color: rgba(0, 0, 0, 0.3); /* Cor de overlay com opacidade */
-}
-
-body > header > nav > a {
-    position: relative;
-}
-
-header > p {
     display: flex;
-    flex-direction: column; /* Organiza os itens em colunas */
-    justify-content: center; /* Alinha os itens verticalmente */
-    align-items: center; 
-    height: 100%
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-size: cover; /* Ajusta a imagem de fundo para cobrir todo o cabeçalho */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Evita que a imagem de fundo se repita */
+    min-height: 150px; /* Garante uma altura mínima */
 }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.pirata-one-regular {
+    font-family: "Pirata One", system-ui, sans-serif;
+    font-size: 4rem;
+    font-style: normal;
+    letter-spacing: 10px;
+    
+  }
+  
  
 
-header > nav > ul {
-   
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;          
+/* Menu */
+nav ul {
+    display: flex;
+    list-style: none;
+    
+    
 }
 
-
-header > nav > ul > li {
+nav ul li {
+    margin: 0 10px;
     padding: 10px;
-    display: inline-block;
-    margin-right: 50px;
-    position: relative;
-    a {
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        outline: 2px solid white;
-        outline-offset: 0.2rem;
-        border-radius: 20px ;
-        padding: 5px;        
-    }   
+    
+    
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    
+}
 
-
-a:hover {
-    filter: brightness(50%);
-    transition: all 0.5s; 
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .jogar {
-    background: purple ;
-    padding: 5px;
+    background: white;
+    color: black;
+    border: 2px solid white;
     border-radius: 20px;
-    color: black ;
-    outline: 2px solid purple;
-    outline-offset: 0.2rem;
+    padding: 5px 10px;
+    top: -60px;
 }
 
 .jogar:hover {
-    filter: brightness(50%);
-    transition: all 0.5s;  
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-footer {
-    width: 100%;
-    padding: 3rem;
-    height: 3rem;
-    background:rgb(8, 8, 8);
-    ul {
-        list-style: none;
-        text-decoration: none;
-
-        text-align: center;
-        backdrop-filter: blur(10px);       
-    }
-    li {
-        display: inline-block;
-        margin: 10px 15px;       
-    }
-
-    p {
-        color: white;
-        text-align: center;
-        margin: 1px;
-    }
-}
-
-section {
-    height: 100rem; 
-    p {color: black;
-       font-size: 2rem;
-       text-align: center;
-       margin: 4rem;
-       overflow: hidden;
-    }
-    
-    h2 {
-        text-align: center;
-        margin: 2rem;
-        font-size: 60px;
-        font-family: "Pirata One" ;
-        letter-spacing: 10px;
-    }
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2,50%);
-}
-
-.pirata-one-regular {
-  font-family: "Pirata One", system-ui, sans-serif;
-  font-size: 4rem;
-  font-style: normal;
-  letter-spacing: 10px;
-}
-
-#logo {
+#logo {  
     font-family: "Pirata One", system-ui, sans-serif;
     font-size: 2rem;
     text-decoration: none;
-    color: rgb(124, 40, 124);  
+    color: rgb(124, 40, 124);
+    position: relative; /* Permite ajustar a posição */
+    top: -40px; /* Move a logo para cima */
+    margin: 0; /* Remove margens extras */ 
+  }
+
+/* Botão de três pontos */
+
+
+/* Rodapé */
+footer {
+    background: rgb(8, 8, 8);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
 }
 
-.p-index {
-    margin-top: 0px;
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
 }
 
-.jogarbutton1 {
-    padding: 550px;
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
     text-decoration: none;
     color: white;
-    border-radius: 90px; 
 }
 
-.jogarbutton2 {
-    border-radius: 60px;
-    background-color: purple;
+footer p {
+    margin-top: 1rem;
 }
 
-.jogarbutton1:hover {
-    filter: brightness(100%);
+/* Seção */
+section {
+    padding: 2rem;
+    text-align: center;
+    flex: 1; /* Expande o conteúdo para ocupar o espaço restante */
+    padding: 2rem;
+    text-align: center;
 }
 
-.fontlegal {
-    font-family: "Pirata One" , Arial, Helvetica, sans-serif;
+section h2 {
+    font-family: "Pirata One", system-ui, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+section p {
+    font-size: 1.5rem; /* Aumenta o tamanho da fonte */
     color: white;
-    font-size: 4rem;
-    position: relative;
+    margin-bottom: 1rem;
+    line-height: 1.6;
 }
 
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.grid img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.erick {
+    display: none; /* Esconde no desktop */
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    position: absolute; /* Posiciona o botão */
+    top: 15px; /* Ajusta a posição vertical */
+    right: 15px; /* Empurra para a direita */
+    z-index: 1000;
+}
+/* Estilos para dispositivos móveis */
+@media (max-width: 1000px) {
+
+    .erick {
+        display: block; /* Mostra o botão no celular */
+    }
+
+    html {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #logo {
+        font-family: "Pirata One", system-ui, sans-serif;
+        font-size: 2rem;
+        text-decoration: none;
+        color: rgb(124, 40, 124);  
+    }
+    nav ul {
+      
+        display: none; /* Esconde o menu por padrão */
+        flex-direction: column;
+        background-color: black;
+        position: absolute;
+        top: 75px;
+        right: 1%;
+        width: 98%;
+        border: 1px solid white;
+        padding: 10px;
+        z-index: 1;
+        text-align: center;
+        
+    }
 
 
 
+    nav ul li {
+        margin: 10px 0; /* Espaçamento entre os itens do menu */
+    }
 
+    
 
+    nav ul.show {
+        display: flex; /* Mostra o menu quando ativado */
+    }
 
+    .grid {
+        grid-template-columns: 1fr; /* Ajusta o grid para uma coluna no celular */
+    }
 
+    section h2 {
+        font-size: 1.5rem; /* Reduz o tamanho do título no celular */
+    }
 
+    section p {
+        font-size: 1.3rem; /* Reduz o tamanho do texto no celular */
+    }
 
+}

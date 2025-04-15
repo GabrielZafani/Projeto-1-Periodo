@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Jogo!</title>
-    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
 
 
@@ -13,55 +13,58 @@
 
 <body>
     <header>
+        <a id="logo" href="index.html">Pixel Rush</a>
+        <span class="menu-toggle">☰</span> <!-- Botão de três pontos -->
         <nav>
-            <a id="logo" href="index.html"> Pixel Rush </a>
             <ul>
-                <li><a href="index.html" title="Home"> Home </a></li>
-                <li><a href=sobre.html title="Sobre"> sobre </a></li>
-                <li><a href="galeria.html" title="galeria" > Galeria </a></li>
-                <li><a href="contato.html" title="Contato"> Contato </a></li>
-                <li><a class="jogar" href="Jogar.html" title="Jogar"> Jogar </a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a class="jogar" href="jogar.html">Jogar</a></li>
             </ul>
         </nav>
-        <p>O melhor ainda está por vir</p>
-
     </header>
-
     <section>
         <h2>
             
         </h2>
         <div class="grid">
-            <p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.515052393551!2d-52.38334732546729!3d-24.04816047965533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ed754071f8391b%3A0x6c679332dde3e683!2sCentro%20Educacional%20Grupo%20Integrado%2C%20Centro!5e0!3m2!1spt-BR!2sbr!4v1743464114256!5m2!1spt-BR!2sbr" width="500" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </p>
-                            
-            
-            <p class="form">
-            <label for="nome">Nome:</label><br>
-            <input type="text" id="nome" name="nome" required><br><br>
+            <div>
+                <p>
+                    <img src="https://media1.tenor.com/m/JwC1q_u8_oQAAAAC/hollow-knight.gif" alt="gif">
+                </p>
+            </div>
 
-            <label for="email">E-mail:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-           
+            <div class="coluna">
+                <h2>Estilo do jogo</h2>
+                <p class="p-index">
+                    Pixel Gang é um jogo 2D narrativo com visual pixelado e cores vibrantes, ambientado em um cenário urbano estilizado e dinâmico. Com foco na criatividade e improviso, os jogadores constroem histórias rápidas e envolventes, transformando situações simples em aventuras cheias de estilo, atitude e personalidade.
+                </p>
+            </div>
 
+            <div>
+                <p> <img src="https://media1.tenor.com/m/dqlj6FBW1EAAAAAC/grimm-hollow-knight.gif" alt=""></p>
+              
 
-            <label for="mensagem">Mensagem:</label><br>
-            <textarea id="mensagem" name="mensagem" rows="7" required></textarea><br>
-
-            <button class="btn" type="submit">Enviar</button></p>
-            
-           
+            </div>
+            <div>
+                <h2 class="p-index">Resumo da história</h2>
+                <p>
+                    Após 10 anos preso, MC Dog retorna à Vila Nova para retomar seu território dominado pelos Ballas. Com Tio Roque ao lado, ele dá o primeiro golpe — mas a guerra está longe do fim.  
+                </p>
+                
+            </div>
         </div>
+        <p class="jogarbutton2"><a class="jogarbutton1" href="/jogar.html" title="Jogar">Jogar</a></p>
 
-
-    </section>
-
+    </section >
+    
     <footer>
         <ul>
             <li>
                 <a target="_blank" class="ico" href="https://www.instagram.com/gabriel_zafani_/" title="Instagram"><img
-                    width="30px" src="../Projeto-1-Periodo/css/IMGS/instagram.png" alt="instagram"></a>
+                    width="30px" src="https://cdn-icons-png.flaticon.com/512/5968/5968776.png" alt="instagram"></a>
             </li>
             <li>
                 <a target="_blank" class="ico" href="colocar o canal"><img width="30px" src="css/IMGS/Youtube.png"
@@ -73,12 +76,22 @@
         </ul>
         <p>
             © 2025 Pixel Rush. Todos os direitos reservados. Criado por Gabriel Zafani.
-
         </p>
 
     </footer>
 
+<script> 
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector("nav ul");
+
+    menuToggle.addEventListener("click", function () {
+        navMenu.classList.toggle("show");
+    });
+});  
+</script>
 </body>
 
-</html>
 
+
+</html>

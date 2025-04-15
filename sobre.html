@@ -1,53 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Jogo!</title>
-    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
 
-      
+
 </head>
+
 <body>
-    
-
-
-
-<header>
-    <nav>
-        <a id="logo" href="index.html" title="Home"> Pixel Rush </a>
-        <ul>
-            <li><a href="index.html" title="Home"> Home </a></li>
-            <li><a href=sobre.html title="Sobre"> sobre </a></li>
-            <li><a href="galeria.html" title="galeria" > Galeria </a></li>
-            <li><a href="contato.html" title="Contato"> Contato </a></li>
-            <li><a class="jogar" href="Jogar.html" title="Jogar"> Jogar </a></li>
-        </ul>
-    </nav>
-
-</header>
-
-<section >
-    
-</section>
-
-<footer>
-    <ul>
-        <li>
-            <a target="_blank" class="ico" href="https://www.instagram.com/gabriel_zafani_/" title="Instagram"><img width="30px" src="/css/IMGS/instagram.png" alt="instagram"></a>
-        </li>
-        <li>
-            <a target="_blank" class="ico" href="colocar o canal"><img width="30px" src="css/IMGS/Youtube.png" alt=""></a>
-        </li>
-        <li>
+    <header>
+        <a id="logo" href="index.html">Pixel Rush</a>
+        <span class="menu-toggle">☰</span> <!-- Botão de três pontos -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a class="jogar" href="jogar.html">Jogar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>
             
-        </li>
-    </ul>
-    <p>
-    © 2025 Pixel Rush. Todos os direitos reservados. Criado por Gabriel Zafani.
-    </p>
-</footer> <!-- LEMBRAR DE COLOCAR OS ICONES NA IMG e TROCAR POIS NA FACULDADE TROQUEI PARA URL --> 
+        </h2>
+        <div class="grid">
+            <div>
+                <p>
+                    <img src="https://media1.tenor.com/m/JwC1q_u8_oQAAAAC/hollow-knight.gif" alt="gif">
+                </p>
+            </div>
 
+            <div class="coluna">
+                <h2>Estilo do jogo</h2>
+                <p class="p-index">
+                    Pixel Gang é um jogo 2D narrativo com visual pixelado e cores vibrantes, ambientado em um cenário urbano estilizado e dinâmico. Com foco na criatividade e improviso, os jogadores constroem histórias rápidas e envolventes, transformando situações simples em aventuras cheias de estilo, atitude e personalidade.
+                </p>
+            </div>
+
+            <div>
+                <p> <img src="https://media1.tenor.com/m/dqlj6FBW1EAAAAAC/grimm-hollow-knight.gif" alt=""></p>
+              
+
+            </div>
+            <div>
+                <h2 class="p-index">Resumo da história</h2>
+                <p>
+                    Após 10 anos preso, MC Dog retorna à Vila Nova para retomar seu território dominado pelos Ballas. Com Tio Roque ao lado, ele dá o primeiro golpe — mas a guerra está longe do fim.  
+                </p>
+                
+            </div>
+        </div>
+        <p class="jogarbutton2"><a class="jogarbutton1" href="/jogar.html" title="Jogar">Jogar</a></p>
+
+    </section >
+    
+    <footer>
+        <ul>
+            <li>
+                <a target="_blank" class="ico" href="https://www.instagram.com/gabriel_zafani_/" title="Instagram"><img
+                    width="30px" src="https://cdn-icons-png.flaticon.com/512/5968/5968776.png" alt="instagram"></a>
+            </li>
+            <li>
+                <a target="_blank" class="ico" href="colocar o canal"><img width="30px" src="css/IMGS/Youtube.png"
+                        alt=""></a>
+            </li>
+            <li>
+
+            </li>
+        </ul>
+        <p>
+            © 2025 Pixel Rush. Todos os direitos reservados. Criado por Gabriel Zafani.
+        </p>
+
+    </footer>
+
+<script> 
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector("nav ul");
+
+    menuToggle.addEventListener("click", function () {
+        navMenu.classList.toggle("show");
+    });
+});  
+</script>
 </body>
+
+
+
 </html>
