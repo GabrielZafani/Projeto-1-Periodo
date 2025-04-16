@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Jogo!</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contato.css">
     <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
 
 
@@ -14,7 +14,7 @@
 <body>
     <header>
         <a id="logo" href="index.html">Pixel Rush</a>
-        <span class="menu-toggle">☰</span> <!-- Botão de três pontos -->
+        <span class="erick">☰</span> 
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -24,40 +24,23 @@
                 <li><a class="jogar" href="jogar.html">Jogar</a></li>
             </ul>
         </nav>
+       
     </header>
+    
     <section>
-        <h2>
+            <h2>Formulário de Contato</h2>
+            <form action="#" method="post" class="form-container">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required> <br>
             
-        </h2>
-        <div class="grid">
-            <div>
-                <p>
-                    <img src="https://media1.tenor.com/m/JwC1q_u8_oQAAAAC/hollow-knight.gif" alt="gif">
-                </p>
-            </div>
-
-            <div class="coluna">
-                <h2>Estilo do jogo</h2>
-                <p class="p-index">
-                    Pixel Gang é um jogo 2D narrativo com visual pixelado e cores vibrantes, ambientado em um cenário urbano estilizado e dinâmico. Com foco na criatividade e improviso, os jogadores constroem histórias rápidas e envolventes, transformando situações simples em aventuras cheias de estilo, atitude e personalidade.
-                </p>
-            </div>
-
-            <div>
-                <p> <img src="https://media1.tenor.com/m/dqlj6FBW1EAAAAAC/grimm-hollow-knight.gif" alt=""></p>
-              
-
-            </div>
-            <div>
-                <h2 class="p-index">Resumo da história</h2>
-                <p>
-                    Após 10 anos preso, MC Dog retorna à Vila Nova para retomar seu território dominado pelos Ballas. Com Tio Roque ao lado, ele dá o primeiro golpe — mas a guerra está longe do fim.  
-                </p>
-                
-            </div>
-        </div>
-        <p class="jogarbutton2"><a class="jogarbutton1" href="/jogar.html" title="Jogar">Jogar</a></p>
-
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required> <br>
+            
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="5" required></textarea><br><br><br>
+            
+                <button type="submit">Enviar</button>
+            </form>
     </section >
     
     <footer>
@@ -82,11 +65,11 @@
 
 <script> 
 document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navMenu = document.querySelector("nav ul");
+    const menuToggle = document.querySelector(".erick"); // Botão de três pontos
+    const navMenu = document.querySelector("nav ul"); // Menu de navegação
 
     menuToggle.addEventListener("click", function () {
-        navMenu.classList.toggle("show");
+        navMenu.classList.toggle("show"); // Adiciona ou remove a classe 'show'
     });
 });  
 </script>
@@ -94,4 +77,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-</html> 
+</html>
