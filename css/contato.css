@@ -87,7 +87,7 @@ nav ul li a:hover {
     font-family: "Pirata One", Arial, Helvetica, sans-serif;
     font-size: 2rem;
     text-decoration: none;
-    color: rgb(124, 40, 124);
+    color: purple;
     position: relative;  
     margin: 0; /* Remove margens extras */ 
     z-index: 2;
@@ -170,8 +170,9 @@ section {
 
 .form-container input:focus,
 .form-container textarea:focus {
-    border-color: #007bff;
+    border-color: black;
     outline: none;
+    background-color: rgb(240, 240, 240) ;
 }
 
 .form-container button {
