@@ -14,7 +14,7 @@ body {
 
 /* Cabeçalho */
 header {
-    background-image:url(IMGS/gametela.png);
+    background: rgb(8, 8, 8);
     color: white;
     width: 100%;
     padding: 1rem;
@@ -24,7 +24,6 @@ header {
     background-size: cover; /* Ajusta a imagem de fundo para cobrir todo o cabeçalho */
     background-position: center; /* Centraliza a imagem de fundo */
     background-repeat: no-repeat; /* Evita que a imagem de fundo se repita */
-    min-height: 300px; /* Garante uma altura mínima */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 1); /* Adiciona sombra ao cabeçalho */
 }
 
@@ -43,6 +42,18 @@ nav {
 
    
 }
+
+img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+img:hover {
+    transform: scale(1.2);
+                       
+}
+
+
 
 html, body {
     height: 100%;
@@ -143,6 +154,7 @@ section {
     flex: 1; /* Expande o conteúdo para ocupar o espaço restante */
     padding: 2rem;
     text-align: center;
+    
 
     h2 {
         color: purple;
@@ -197,21 +209,16 @@ section p {
     color: white;
     position: absolute; /* Posiciona o botão */
     top: 15px; /* Ajusta a posição vertical */
-    right: 15px; 
+    right: 15px; /* Empurra para a direita */
     z-index: 1000;
 }
 
-.img_pqn {
-    width: 150px;
-    height: 150px;
-
-}
 
 
 @media (max-width: 1000px) {
 
     .erick {
-        display: block; 
+        display: block; /* Mostra o botão no celular */
     }
 
     html {
