@@ -13,24 +13,23 @@
 
 <body>
     <header>
+        <a id="logo" href="index.html">Pixel Rush</a>
+        <span class="erick">☰</span> <!-- Botão de três pontos -->
         <nav>
-            <a id="logo" href="index.html"> Pixel Rush </a>
             <ul>
-                <li><a href="index.html" title="Home"> Home </a></li>
-                <li><a href=sobre.html title="Sobre"> sobre </a></li>
-                <li><a href="galeria.html" title="galeria" > Galeria </a></li>
-                <li><a href="contato.html" title="Contato"> Contato </a></li>
-                <li><a class="jogar" href="Jogar.html" title="Jogar"> Jogar </a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a class="jogar" href="jogar.html">Jogar</a></li>
             </ul>
         </nav>
-        <p>O melhor ainda está por vir</p>
-
+       
     </header>
-
     <section>
-     
-    </section>
-
+            <iframe width="900px" height="500px" src="jogo/index.html" frameborder="0"></iframe>
+    </section >
+    
     <footer>
         <ul>
             <li>
@@ -40,11 +39,22 @@
         </ul>
         <p>
             © 2025 Pixel Rush. Todos os direitos reservados. Criado por Gabriel Zafani.
-
         </p>
 
     </footer>
 
+<script> 
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".erick"); // Botão de três pontos
+    const navMenu = document.querySelector("nav ul"); // Menu de navegação
+
+    menuToggle.addEventListener("click", function () {
+        navMenu.classList.toggle("show"); // Adiciona ou remove a classe 'show'
+    });
+});  
+</script>
 </body>
+
+
 
 </html>
