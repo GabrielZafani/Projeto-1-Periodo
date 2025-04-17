@@ -132,6 +132,11 @@ section {
     h2 {
         color: purple;
     }
+
+    iframe {
+        width: 50%;
+        height: 90%;
+    }
     
 }
 
@@ -190,6 +195,12 @@ section p {
     height: 150px;
 }
 
+.mobile-message {
+    display: none;
+}
+
+
+
 
 @media (max-width: 1000px) {
 
@@ -223,10 +234,6 @@ section p {
         
     }
 
-    
-    
-
-
 
     nav ul li {
         margin: 10px 0; /* Espaçamento entre os itens do menu */
@@ -249,5 +256,16 @@ section p {
     section p {
         font-size: 1.3rem; /* Reduz o tamanho do texto no celular */
     }
+
+    iframe {display: none;}
+
+    .mobile-message {
+        display: block;
+        text-align: center;
+        font-size: 1.2rem;
+
+    }
+
+
 
 }
