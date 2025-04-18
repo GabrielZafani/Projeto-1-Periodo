@@ -58,11 +58,11 @@
 
 <script> 
 document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.querySelector(".erick"); // Botão de três pontos
-    const navMenu = document.querySelector("nav ul"); // Menu de navegação
+    const menuToggle = document.querySelector(".erick"); 
+    const navMenu = document.querySelector("nav ul"); 
 
     menuToggle.addEventListener("click", function () {
-        navMenu.classList.toggle("show"); // Adiciona ou remove a classe 'show'
+        navMenu.classList.toggle("show"); 
     });
 }); 
 
@@ -94,6 +94,7 @@ document.getElementById("botao").onclick = function() {
 
     if (nome !== "" && email !== "" && email.includes("@") && mensagem !== "") {
         alert("Mensagem enviada com sucesso!");
+        
     }
 }
 </script>
