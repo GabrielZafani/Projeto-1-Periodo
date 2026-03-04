@@ -50,12 +50,13 @@ html, body {
     display: flex;
     flex-direction: column;
 }
-.pirata-one-regular {
-    font-family: "Pirata One", Arial, Helvetica, sans-serif;
-    font-size: 4rem;
-    font-style: normal;
-    letter-spacing: 10px;
+
+.bungee-regular {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
 nav ul {
     display: flex;
     list-style: none; 
@@ -98,7 +99,7 @@ nav ul li a:hover {
 }
 
 #logo {  
-    font-family: "Pirata One", Arial, Helvetica, sans-serif;
+    font-family: "Bungee", Arial, Helvetica, sans-serif;
     font-size: 2rem;
     text-decoration: none;
     color: rgb(124, 40, 124);
@@ -151,7 +152,7 @@ section {
 }
 
 section h2 {
-    font-family: "Pirata One", Arial, Helvetica, sans-serif;
+    font-family: "Bungee", Arial, Helvetica, sans-serif;
     font-size: 2rem;
     margin-bottom: 1rem;
 }
@@ -219,7 +220,7 @@ section p {
     }
 
     #logo {
-        font-family: "Pirata One", system-ui, sans-serif;
+        font-family: "Bungee", system-ui, sans-serif;
         font-size: 2rem;
         text-decoration: none;
         color: rgb(124, 40, 124);  
