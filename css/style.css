@@ -86,7 +86,7 @@ nav ul li a:hover {
 }
 
 .jogar {
-    background: purple;
+    background: orange;
     color: white;
     
     border-radius: 10px;
@@ -94,7 +94,7 @@ nav ul li a:hover {
 }
 
 .jogar:hover {
-    background: rgb(107, 0, 107);
+    background: orangered;
     color: rgb(255, 255, 255);
 }
 
@@ -102,7 +102,7 @@ nav ul li a:hover {
     font-family: "Bungee", Arial, Helvetica, sans-serif;
     font-size: 2rem;
     text-decoration: none;
-    color: rgb(124, 40, 124);
+    color: Orange;
     position: relative;  
     margin: 0; /* Remove margens extras */ 
     z-index: 2;
@@ -146,7 +146,7 @@ section {
     text-align: center;
 
     h2 {
-        color: purple;
+        color: orange;
     }
     
 }
@@ -165,7 +165,7 @@ section p {
 }
 
 .jogarbutton1 {
-    background-color: purple;
+    background-color: orange;
     color: white;
     border-radius: 10px;
     padding: 10px 15px;
@@ -173,7 +173,7 @@ section p {
 }
 
 .jogarbutton1:hover {
-    background-color: rgb(107, 0, 107);
+    background-color: orangered;
     color: rgb(255, 255, 255);
 }
 
@@ -223,7 +223,7 @@ section p {
         font-family: "Bungee", system-ui, sans-serif;
         font-size: 2rem;
         text-decoration: none;
-        color: rgb(124, 40, 124);  
+        color: orange;  
     }
     nav ul {
       

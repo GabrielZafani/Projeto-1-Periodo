@@ -71,7 +71,7 @@ nav ul li a:hover {
 }
 
 .jogar {
-    background: purple;
+    background: orange;
     color: white;
     
     border-radius: 10px;
@@ -79,7 +79,7 @@ nav ul li a:hover {
 }
 
 .jogar:hover {
-    background: rgb(107, 0, 107);
+    background: orangered;
     color: rgb(255, 255, 255);
 }
 
@@ -87,7 +87,7 @@ nav ul li a:hover {
     font-family: "Bungee", Arial, Helvetica, sans-serif;
     font-size: 2rem;
     text-decoration: none;
-    color: purple;
+    color: orange;
     position: relative;  
     margin: 0; /* Remove margens extras */ 
     z-index: 2;
@@ -134,7 +134,7 @@ section {
     height: 100%;
 
     h2 {
-    color: purple;
+    color: orange;
     font-family: "Bungee", Arial, Helvetica, sans-serif;
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -177,7 +177,7 @@ section {
 
 .form-container button {
     padding: 0.8rem;
-    background-color: purple;
+    background-color: orange;
     color: white;
     border: none;
     border-radius: 5px;
@@ -187,7 +187,7 @@ section {
 }
 
 .form-container button:hover {
-    background-color: rgb(107, 0, 107);
+    background-color: orangered;
 }
 
 .grid img {
