@@ -28,26 +28,7 @@
        
     </header>
     <section>
-        <h2>
-            
-        </h2>
         <div class="grid">
-            <div>
-                <h2>Sobre o Jogo</h2>
-                <p>
-                    <img src="css/IMGS/carrinho.png" alt="gif">
-                </p>
-            </div>
-
-            <div class="coluna">
-                <p>
-                    Pixel Gang é um jogo 2D narrativo com visual pixelado e cores vibrantes, ambientado em uma cidade urbana estilizada. Focado na criatividade e improviso, os jogadores criam histórias rápidas e cheias de personalidade.
-
-                    Em uma dessas histórias, acompanhamos MC Dog, ex-líder respeitado da Vila Nova, que retorna após dez anos de prisão e encontra seu bairro dominado pela gangue dos Ballas. Com a ajuda de Tio Roque, mentor e estrategista da velha guarda, ele inicia a retomada do território. A reconquista da Rua 17 marca o início da virada — e o recado é claro: “A VILA NÃO ESQUECE”.
-                    Com estilo, memória e respeito, a quebrada começa a respirar de novo.
-                </p>
-            </div>
-
             <div>
                 <h2>Sobre mim</h2>
                 <p> <img class="img-eu" src="css/IMGS/meu celular.jpg" alt=""></p>
@@ -57,6 +38,36 @@
                     Meu nome é Gabriel Roberto Zafani, tenho 19 anos e carrego o sonho de me tornar streamer e, um dia, viver fora do país. Desde a infância, os jogos sempre fizeram parte da minha vida, trazendo momentos de diversão e conexão com os amigos. Além disso, sou apaixonado por vôlei, um hobby que cultivo com dedicação desde pequeno, sempre buscando evoluir.
                 </p>  
             </div>
+            
+            <br>
+
+            <div>
+                <h2>Sobre o Jogo</h2>
+                    <img src="css/IMGS/carrinho.png" alt="gif">
+            </div>
+
+            <div>
+                <p>
+                    Pixel Gang é um jogo 2D narrativo com visual pixelado e cores vibrantes, ambientado em uma cidade urbana estilizada. Focado na criatividade e improviso, os jogadores criam histórias rápidas e cheias de personalidade.
+
+                    Em uma dessas histórias, acompanhamos MC Dog, ex-líder respeitado da Vila Nova, que retorna após dez anos de prisão e encontra seu bairro dominado pela gangue dos Ballas. Com a ajuda de Tio Roque, mentor e estrategista da velha guarda, ele inicia a retomada do território. A reconquista da Rua 17 marca o início da virada — e o recado é claro: “A VILA NÃO ESQUECE”.
+                    Com estilo, memória e respeito, a quebrada começa a respirar de novo.
+                </p>
+            </div>
+
+            <br>
+            
+            
+            <div>
+                <h2>ficha técnica</h2>
+                <p><strong>Desenvolvedora:</strong> <span id="info-dev"></span></p>
+                <p><strong>Gênero Principal:</strong> <span id="info-gen"></span></p>
+                <p><strong>Plataforma:</strong> <span id="info-plat"></span></p>
+                <p><strong>Preço Sugerido:</strong> <span id="info-preco"></span></p>
+                <p><strong>Classificação Indicativa:</strong> <span id="info-etaria"></span></p>      
+            </div>
+
+
         </div>
         <p><a class="jogarbutton1" href="/jogar.html" title="Jogar">Jogar</a></p>
 
@@ -83,7 +94,25 @@ document.addEventListener("DOMContentLoaded", function () {
     menuToggle.addEventListener("click", function () {
         navMenu.classList.toggle("show"); 
     });
-});  
+
+
+// Manipulação de Dados Estáticos
+const devJogo = "Gabriel Zafani";
+const genJogo = "Ação / Aventura";
+const platJogo = "PC";
+const precoJogo = "R$ 9,98";
+const classJogo = "18 anos";
+
+
+document.getElementById("info-dev").innerText = devJogo;
+document.getElementById("info-gen").innerText = genJogo;
+document.getElementById("info-plat").innerText = platJogo;
+document.getElementById("info-preco").innerText = precoJogo;
+document.getElementById("info-etaria").innerText = classJogo;
+
+
+});
+
 </script>
 </body>
 
