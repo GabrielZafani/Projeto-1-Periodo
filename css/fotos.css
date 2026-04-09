@@ -9,6 +9,7 @@
 body {
     width: 100%;
     background: #f4f4f4;
+    color: black;
     overflow-x: hidden;
 }
 
@@ -170,7 +171,6 @@ section h2 {
 
 section p {
     font-size: 1.5rem; /* Aumenta o tamanho da fonte */
-    color: rgb(0, 0, 0);
     margin-bottom: 1rem;
     line-height: 1.6;
 }
@@ -211,6 +211,16 @@ section p {
     top: 15px; /* Ajusta a posição vertical */
     right: 15px; /* Empurra para a direita */
     z-index: 1000;
+}
+/*Manipulação de Visibilidade via DOM*/
+.bloqueado img {
+    filter: blur(20px);
+}
+
+/* Tema escuro */
+.dark-mode {
+    background-color: #121212;
+    color: white;
 }
 
 

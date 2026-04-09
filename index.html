@@ -21,7 +21,19 @@
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
                 <li><a href="contato.html">Contato</a></li>
+                <li><a href="#"
+                    onclick="
+                    localStorage.removeItem('acessoLiberado');
+                    location.href = 'index.html';
+                    return false;
+                    ">
+                    Refazer Verificação
+                    </a>
+                </li>
+                <li><a href="#" id="tema-btn">Tema</a></li> 
                 <li><a class="jogar" href="jogar.html">Jogar</a></li>
+
+                
             </ul>
         </nav>
        
@@ -31,7 +43,7 @@
             
         </h2>
         <div class="grid">
-            <div>
+            <div id="conteudo-sensivel">
                 <p>
                     <img class="img_pqn" src="css/IMGS/enemy.png" alt="gif">
                 </p>
@@ -44,10 +56,8 @@
                 </p>
             </div>
 
-            <div>
+            <div >
                 <p> <img class="img_pqn" src="css/IMGS/main.png" alt=""></p>
-              
-
             </div>
             <div>
                 <h2 class="p-index">Resumo da história</h2>
@@ -86,35 +96,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Verificação Automatizada de Lançamento
+        const ANO_LANCAMENTO = 2026;
+        let anoAtual = new Date().getFullYear();
 
-const anoLanc = 2026;
-let anoAtual = new Date().getFullYear();
-
-if (anoAtual === anoLanc) {
-    alert("Este jogo será lançado este ano, aproveite a pré-venda!!")
-}
-
-// Entrada de Dados via Prompt e Lógica de Decisão e Feedback
-
-let nomeVisitante = prompt("Bem-vindo ao site! Qual é o seu nome?");
-let idadeVisitante = prompt("Olá, " + nomeVisitante + "! Qual é a sua idade para acessar o conteúdo sensível?");
-
-if (idadeVisitante >= 18) {
-    
-    alert("Parabéns, " + nomeVisitante + "! Seu acesso foi liberado com sucesso.");
-    // //Manipulação de Visibilidade via DOM 
-    document.getElementById("conteudo-sensivel").style.filter = "none";
-} else {
-    
-    alert("Lamentamos, " + nomeVisitante + ". Por segurança, as imagens do jogo permanecerão borradas.");
-    // //Manipulação de Visibilidade via DOM 
-    document.getElementById("conteudo-sensivel").style.filter = "blur(20px)";
-}
-
-
+        if (anoAtual == ANO_LANCAMENTO) {
+            alert("📢 NOTÍCIA: Este jogo é um GRANDE LANÇAMENTO deste ano!");
+        }
 
 });  
 </script>
+ <script src="/js/index.js"></script>
 </body>
 
 

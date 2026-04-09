@@ -9,6 +9,7 @@
 body {
     width: 100%;
     background: #f4f4f4;
+    color: black;
     overflow-x: hidden;
 }
 
@@ -148,7 +149,7 @@ section h2 {
 
 section p {
     font-size: 1.5rem; /* Aumenta o tamanho da fonte */
-    color: rgb(0, 0, 0);
+    
     margin-bottom: 1rem;
     line-height: 1.6;
 }
@@ -200,7 +201,11 @@ section p {
     
 }
 
-
+/* Tema escuro */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
 
 
 

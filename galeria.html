@@ -22,6 +22,16 @@
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
                 <li><a href="contato.html">Contato</a></li>
+                <li><a href="#"
+                    onclick="
+                    localStorage.removeItem('acessoLiberado');
+                    location.href = 'index.html';
+                    return false;
+                    ">
+                    Refazer Verificação
+                    </a>
+                </li>
+                <li><a href="#" id="tema-btn">Tema</a></li>
                 <li><a class="jogar" href="jogar.html">Jogar</a></li>
             </ul>
         </nav>
@@ -31,35 +41,35 @@
         <h2>
             
         </h2>
-        <div class="grid">
-            <div>
+        <div  class="grid">
+            <div id="conteudo-sensivel">
                 <p>
                     <img src="css/IMGS/enemy.png" alt="gif">
                 </p>
             </div>
 
-            <div>
+            <div id="conteudo-sensivel">
 
                 <p><img src="css/IMGS/fonte.png" alt=""></p>
                 
             </div>
 
-            <div>
+            <div id="conteudo-sensivel">
                 <p> <img src="css/IMGS/rampas.png" alt=""></p>
               
 
             </div>
-            <div>
+            <div id="conteudo-sensivel">
                 
                 <p><img src="css/IMGS/main.png" alt=""></p>
                 
             </div>
-            <div>
+            <div id="conteudo-sensivel">
                 <p> <img src="css/IMGS/carrinho.png" alt=""></p>
               
 
             </div>
-            <div>
+            <div id="conteudo-sensivel">
                 
                 <p><img class="img-grande"  src="css/IMGS/arvore.png" alt=""></p>
                 
@@ -93,6 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });  
 </script>
+<script src="/js/index.js"></script>
 </body>
 
 

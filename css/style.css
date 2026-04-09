@@ -9,6 +9,7 @@
 body {
     width: 100%;
     background: #f4f4f4;
+    color: rgb(0, 0, 0);
     overflow-x: hidden;
 }
 
@@ -37,6 +38,7 @@ header::before {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); 
     z-index: 1; }
+
 
 nav {
     z-index: 2; /* Coloca o menu acima da camada escura */
@@ -170,8 +172,7 @@ section h2 {
 }
 
 section p {
-    font-size: 1.5rem; /* Aumenta o tamanho da fonte */
-    color: rgb(0, 0, 0);
+    font-size: 1.5rem; /* Aumenta o tamanho da fonte */;
     margin-bottom: 1rem;
     line-height: 1.6;
 }
@@ -219,11 +220,15 @@ section p {
     height: 150px;
 
 }
+/*Manipulação de Visibilidade via DOM*/
+.bloqueado img {
+    filter: blur(20px);
+}
 
-#conteudo-sensivel {
-            filter: blur(20px); /* Manipulação de Visibilidade via DOM */
-            transition: 1.2s;
-            margin-top: 20px; 
+/* Tema ESCURO */
+.dark-mode { 
+    background-color: #121212;
+    color: white;
 }
 
 

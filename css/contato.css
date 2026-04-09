@@ -127,6 +127,7 @@ section {
     padding: 2rem;
     text-align: center;
     background-color: white;
+    color: black;
     margin: 2rem auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -212,7 +213,11 @@ section {
     width: 300px;
     height: 150px;
 }
-
+/* Tema escuro */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
 
 
 @media (max-width: 1000px) {
