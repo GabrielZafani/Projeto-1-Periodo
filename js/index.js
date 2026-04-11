@@ -6,16 +6,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // verifica se está no index e Entrada de Dados via Promp
-    if (window.location.pathname.includes("index") || window.location.pathname === "/") {
-        
-        let nomeVisitante = prompt("Bem-vindo ao site! Qual é o seu nome?");
-        let idadeVisitante = Number(prompt("Olá, " + nomeVisitante + "! Qual é a sua idade para acessar o conteúdo sensível?"));
+    const path = window.location.pathname;
+    const naHome = path === "/" || path.endsWith("/") || path.endsWith("index.html");
 
-        let acessoLiberado = idadeVisitante >= 18;
+    if (naHome) {
+    let nomeVisitante = prompt("Bem-vindo ao site! Qual é o seu nome?");
+    let idadeVisitante = Number(prompt("Olá, " + nomeVisitante + "! Qual é a sua idade?"));
 
-        // salva no navegador
-        localStorage.setItem("acessoLiberado", acessoLiberado);
-    }
+    let acessoLiberado = idadeVisitante >= 18;
+    localStorage.setItem("acessoLiberado", acessoLiberado);
+}
 
     //  pega valor salvo
     let acesso = localStorage.getItem("acessoLiberado");
