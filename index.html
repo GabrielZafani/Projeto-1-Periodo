@@ -21,8 +21,7 @@
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
                 <li><a href="contato.html">Contato</a></li>
-                <li><button id="tema-btn">Tema Escuro</button></li>
-                <li><a href="#" id="tema-btn">Tema</a></li> 
+                <li><button id="tema-btn">Tema Escuro</button></li> 
                 <li><a class="jogar" href="jogar.html">Jogar</a></li>
 
                 
@@ -78,7 +77,8 @@
 
     </footer>
 
-<script> 
+<script defer src="js/index.js"></script>
+<script defer>
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector(".erick"); 
     const navMenu = document.querySelector("nav ul"); 
@@ -87,17 +87,14 @@ document.addEventListener("DOMContentLoaded", function () {
         navMenu.classList.toggle("show"); 
     });
 
-    // Verificação Automatizada de Lançamento
-        const ANO_LANCAMENTO = 2026;
-        let anoAtual = new Date().getFullYear();
+    const ANO_LANCAMENTO = 2026;
+    let anoAtual = new Date().getFullYear();
 
-        if (anoAtual == ANO_LANCAMENTO) {
-            alert("📢 NOTÍCIA: Este jogo é um GRANDE LANÇAMENTO deste ano!");
-        }
-
+    if (anoAtual == ANO_LANCAMENTO) {
+        alert("📢 NOTÍCIA: Este jogo é um GRANDE LANÇAMENTO deste ano!");
+    }
 });  
 </script>
-<script src="js/index.js"></script>
 </body>
 
 
