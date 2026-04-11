@@ -6,7 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // verifica se está no index e Entrada de Dados via Prompt
     const path = window.location.pathname;
-    if (path === "/" || path.endsWith("/") || path.endsWith("index.html")) {
+    const repo = "/Projeto-1-Periodo/";
+
+    if (path === "/" || path === repo || path.endsWith("index.html")) {
         
         let nomeVisitante = prompt("Bem-vindo ao site! Qual é o seu nome?");
         let idadeVisitante = Number(prompt("Olá, " + nomeVisitante + "! Qual é a sua idade para acessar o conteúdo sensível?"));
@@ -39,9 +41,9 @@ document.addEventListener("DOMContentLoaded", function () {
         botaoTema.textContent = "Tema Claro";
     }
 
-    // clique no <a>
+    // clique no botão
     botaoTema.addEventListener("click", function (e) {
-        e.preventDefault(); // evita recarregar a página
+        e.preventDefault();
 
         document.body.classList.toggle("dark-mode");
 
