@@ -1,11 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+     // ================================
+    // Manipulação de Visibilidade via DOM (Blur)
+    // ================================
     function aplicarBlur(ativar) {
         document.body.classList.toggle("bloqueado", ativar);
     }
 
     const path = window.location.pathname;
     const repo = "/Projeto-1-Periodo/";
-
+    // ================================
+    // Entrada de Dados via Prompt
+    // ================================
     if (path === "/" || path === repo || path.endsWith("index.html")) {
         let nomeVisitante = prompt("Bem-vindo ao site! Qual é o seu nome?");
         let idadeVisitante = Number(prompt("Olá, " + nomeVisitante + "! Qual é a sua idade para acessar o conteúdo sensível?"));
@@ -14,7 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     let acesso = localStorage.getItem("acessoLiberado");
-
+    // ================================
+    // Lógica de Decisão 
+    // ================================
     if (acesso === "true") {
         alert("Acesso liberado! Conteúdo visível.");
         aplicarBlur(false);
@@ -24,7 +32,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const botaoTema = document.getElementById("tema-btn");
-
+    // ================================
+    // Alternância de Tema (Light/Dark Mode)
+    // ================================
     let temaSalvo = localStorage.getItem("tema");
     if (temaSalvo === "escuro") {
         document.body.classList.add("dark-mode");
